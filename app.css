@@ -241,6 +241,8 @@ html, body {
 	align-self: center;
 	font-size: 1.3em;
 }
+
+
 /*------------------------------------------	GALLERY */
 /*----------------------------------------------------------------*/
 #gallery_wrapper{
@@ -371,6 +373,7 @@ html, body {
 	filter: grayscale(100%);
   	-webkit-filter: grayscale(100%);
   	-moz-filter: grayscale(100%);
+  	transition: all 1s ease;
 
 }
 .gallery_image:hover{
