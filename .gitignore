@@ -1,0 +1,12 @@
+/assets
+/navbar
+/site_ver
+/footer
+assets/
+navbar/
+site_ver/
+footer/
+*.jpg
+*.jpeg
+*.png
+
