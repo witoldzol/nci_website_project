@@ -285,6 +285,15 @@ color:#968e8d;
 /*-----------------------------------	HEADER / INFO */
 
 /*logo - header*/
+.about_sec {
+	padding: 0 10% 0 10% ;
+}
+.about_sec h1 {
+	line-height: 1.5em;
+}
+.about_sec p {
+	line-height: 1.5em;
+}
 #about_Section_1 {
 	padding: 10% 3% 10% 0;
 	color:orange;
@@ -298,45 +307,55 @@ color:#968e8d;
 	grid-template-columns: 2fr 1fr;
 	grid-auto-rows: minmax(500px, auto);
 	background-color: #bcb7b6;
-	color: white;
+	color: #504a49;
 }
 #about_Section_2 div {
-
-	max-height: 200px;
-	max-width: 300px;
+	max-height: 400px;
+	max-width: 600px;
 	align-self: center;
 	justify-self:center;
-	border: solid orange 3px;
+
 }
 #about_Section_2 div img {
-	width: 100%;
-	height: 100%;
+	height: 80%;
+	width: 80%;
 }
 #about_Section_2 p {
 	width: 20ch;
 	font-size: 1.5em;
 	align-self: center;
+	justify-self: center;
+	padding-right: 5%;
 }
 
 #about_Section_3 {
 	min-height: 400px;
-	background-color: #d0ccc8;
+	background-color: #f3eee6;
 	font-size: 2em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 5% 0 5%;
+	color: #504a49;
 }
-#about_Section_3 p{
-}
+#about_Section_4 {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #d0ccc8;
+	color: #504a49;
 
+}
+#about_Section_4 h1{
+	text-align: center;
+}
 /* BIG SCREEN */
 
 @media screen and (min-width: 980px){
 	
 	#about_Section_1 {
 		padding: 10% 10% 10% 0;
-
+	}
+	#about_Section_3 {
+		padding: 0 20% 0 20%;
 	}
 
 }
@@ -382,7 +401,7 @@ color:#968e8d;
 	/*area name -- header! */
 	grid-area: h;
 	align-self: center;
-	justify-self: center;
+	justify-content: center;
 	min-width: 100%;
 }
 #gallery_footer{
