@@ -139,7 +139,7 @@ html, body {
 .mainContent_1 h1{
 	margin: 0;
 	font-weight: bold;
-	padding-bottom: 5%;
+	padding-bottom: 15%;
 }
 .mainContent_1 p{
 	margin: 0;
@@ -174,7 +174,7 @@ color:#968e8d;
 .spacer {
 	max-height: 30px;
 	min-height: 30px;
-	background-color: white;
+	background-color: #f3eee6;
 }
 /* ----------------------------- section - 2 */
 
