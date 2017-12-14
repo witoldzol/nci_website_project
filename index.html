@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- CSS sheet -->
-		<link rel="stylesheet" type="text/css" href="app.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
 
 		<!--jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,29 +16,27 @@
 
 		<header>
 			<div id="header">
-
-					<!-- navigation bar -->
-			    <div id="nav">
-			        <div class="navTab">
-			            <a href="app_main.html">HOME</a>
+			            <div id="nav">
+			                <div class="navTab">
+			                    <a href="index.html">HOME</a>
+			                </div>
+			                <div class="navTab">
+			                    <a href="about.html">ABOUT</a>
+			                </div>
+			                <div class="navTab">
+			                    <a href="gallery.html">GALLERY</a>
+			                </div>
+			                <div class="navTab">
+			                    <a href="contact.html">CONTACT</a>
+			                </div>
+			                <div id="search">
+			                    <form>
+			                        <input id="searchBox" type="text" placeholder="Search..." required>
+			                        <input class="button" type="button" value="Search">
+			                    </form>
+			                </div>
+			            </div>
 			        </div>
-			        <div class="navTab">
-			            <a href="app_about.html">ABOUT</a>
-			        </div>
-			        <div class="navTab">
-			            <a href="app_gallery.html">GALLERY</a>
-			        </div>
-			        <div class="navTab">
-			            <a href="app_contact.html">CONTACT</a>
-			        </div>
-			        <div id="search">
-			            <form>
-			                <input id="searchBox" type="text" placeholder="Search..." required>
-			                <input id="searchButton" type="button" value="Search">
-			            </form>
-			        </div>
-			    </div>
-			</div>
 		</header>
 
 		<!-- Langing page -->
@@ -113,12 +111,29 @@
 		</section>
 
 		<!-- footer section -->
-		<section id="footer">
-			<div class="footerText">
-			    <p><b>LOMBARDO INDUSTRIAL FLOORS </b>&trade;</p>
-			    <p id="subtext">&middot; CATANIA | VIA FIMIA, 28 &middot; info@pavimentazioneindustrialelombardo.it</p>
-			</div>
-		</section>
+		<div class="footer">
+		            <div class="social">
+		                <div class="socialTab">
+		                    <a id="facebook" href="http://www.facebook.com">
+		                        <img src="assets/icons/Facebook2.png" class="icon" alt="Facebook">
+		                    </a>
+		                </div>
+		                <div class="socialTab">
+		                    <a id="twitter" href="http://www.twitter.com">
+		                        <img src="assets/icons/Twitter2.png" class="icon" alt="Twitter">
+		                    </a>
+		                </div>
+		                <div class="socialTab">
+		                    <a id="Instagram" href="http://www.instagram.com">
+		                        <img src="assets/icons/Instagram2.png" class="icon" alt="Instagram">
+		                    </a>
+		                </div>
+		            </div>
+		            <div class="footerText">
+		                <p><b>LOMBARDO INDUSTRIAL FLOORS </b>&trade;</p> 
+		                <p class="subtext">&middot; CATANIA | VIA FIMIA, 28 &middot; info@pavimentazioneindustrialelombardo.it</p>
+		            </div>
+		        </div>
 		<script type="text/javascript" src="app.js"></script>
 	</body>
 
