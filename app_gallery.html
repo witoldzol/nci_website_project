@@ -4,7 +4,13 @@
 		<title>Lombardo | Gallery</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="app.css"></head>
+
+		<!-- CSS sheet -->
+		<link rel="stylesheet" type="text/css" href="app.css">
+		<!--jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	</head>
 	<body>
 		<header>
 			<div id="header">
@@ -28,69 +34,107 @@
 			            </form>
 			        </div>
 			    </div>
-			</div> 
+			</div>
 		</header>
-		<div id="gallery_wrapper">
-			<div id="gallery_header"><h1>GALLERY</h1><hr></div>
-			<div id="gallery_main">
-				<div class="gallery_tile" id="gallery_tile_1">
-					<img class="gallery_image" src="assets/images/a.jpg">
-					<div>
-						<h1>INDUSTRIAL</h1>
-					</div>
-				</div>
-				<div class="gallery_tile" id="gallery_tile_2">
-					<h1>LOMBARDO</h1>
-				</div>
+		<section id="gallery_section_1">
 
-				<div class="gallery_tile" id="gallery_tile_3">
-					<img class="gallery_image" src="assets/images/c.jpg">
-				</div>
-				<div class="gallery_tile" id="gallery_tile_4">
-					<img class="gallery_image" src="assets/images/d.jpeg">
-					<div>
-						<h1>PAVEMENTS</h1>
-					</div>
-				</div>
-				<div class="gallery_tile" id="gallery_tile_5">
-					<img class="gallery_image" src="assets/images/e.jpeg">
-				</div>
-				<div class="gallery_tile" id="gallery_tile_6">
-						<img class="gallery_image" src="assets/images/f.jpg">
-				</div>
-				<div class="gallery_tile" id="gallery_tile_7">
-						<img class="gallery_image" src="assets/images/g.jpg">
-				</div>
-				<div class="gallery_tile" id="gallery_tile_8">
-						<img class="gallery_image" src="assets/images/h.jpg">
-				</div>
-				
+			<div class="gallery_header">
+				<h1>GALLERY</h1><hr>
 			</div>
-			<div id="gallery_footer">
-				<div class="footer">
-				    <div class="social">
-				        <div class="socialTab">
-				            <a id="facebook" href="http://www.facebook.com">
-				                <img src="assets/icons/Facebook2.png" class="icon" alt="Facebook">
-				            </a>
-				        </div>
-				        <div class="socialTab">
-				            <a id="twitter" href="http://www.twitter.com">
-				                <img src="assets/icons/Twitter2.png" class="icon" alt="Twitter">
-				            </a>
-				        </div>
-				        <div class="socialTab">
-				            <a id="Instagram" href="http://www.instagram.com">
-				                <img src="assets/icons/Instagram2.png" class="icon" alt="Instagram">
-				            </a>
-				        </div>
-				    </div>
-				    <div class="footerText">
-				        <p><b>LOMBARDO INDUSTRIAL FLOORS </b>&trade;</p> 
-				        <p id="subtext">&middot; CATANIA | VIA FIMIA, 28 &middot; info@pavimentazioneindustrialelombardo.it</p>
-				    </div>
-				</div>
+
+			<div id="gallery_wrapper">
+				<div class="gallery_tile hover-shadow" id="gallery_tile_1" onclick="openPicture(); slideNumber(1)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_2" onclick="openPicture(); slideNumber(2)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_3" onclick="openPicture(); slideNumber(3)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_4" onclick="openPicture(); slideNumber(4)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_5" onclick="openPicture(); slideNumber(5)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_6" onclick="openPicture(); slideNumber(6)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_7" onclick="openPicture(); slideNumber(7)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_8" onclick="openPicture(); slideNumber(8)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_9" onclick="openPicture(); slideNumber(9)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_10" onclick="openPicture(); slideNumber(10)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_11" onclick="openPicture(); slideNumber(11)"></div>
+				<div class="gallery_tile hover-shadow" id="gallery_tile_12" onclick="openPicture(); slideNumber(12)"></div>
 			</div>
-		</div>
+		</section>
+
+
+	<!-- container with modal pictures -->
+	<section id="gallery_section_2" class="modal">
+
+	  <span class="windowClose cursor" onclick="closeModal()">&times;</span>
+
+
+	  <div class="gallery_container_modal">
+
+	    <div class="modal_image">
+	      <div class="imageNumber">1 / 12</div>
+	      <img src="./assets/images/1.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">2 / 12</div>
+	      <img src="./assets/images/2.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">3 / 12</div>
+	      <img src="./assets/images/3.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">4 / 12</div>
+	      <img src="./assets/images/4.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">5 / 12</div>
+	      <img src="./assets/images/5.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">6 / 12</div>
+	      <img src="./assets/images/6.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">7 / 12</div>
+	      <img src="./assets/images/7.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">8 / 12</div>
+	      <img src="./assets/images/8.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">9 / 12</div>
+	      <img src="./assets/images/9.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">10 / 12</div>
+	      <img src="./assets/images/10.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">11 / 12</div>
+	      <img src="./assets/images/11.jpg" >
+	    </div>
+
+	    <div class="modal_image">
+	      <div class="imageNumber">12 / 12</div>
+	      <img src="./assets/images/12.jpg" >
+	    </div>
+	    
+	    <!-- forward & previous buttons  -->
+	    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+	    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+	</section>
+	
+		<section class="footer">
+
+		</section>	
+		<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
