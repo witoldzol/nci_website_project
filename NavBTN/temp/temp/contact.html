@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="css/layout.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+        <div id="header">
+            <input type="button" id="navButton" onclick="toggle()">
+            <div id="nav">
+                <div class="navTab">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="navTab">
+                    <a href="about.html">ABOUT</a>
+                </div>
+                <div class="navTab">
+                    <a href="gallery.html">GALLERY</a>
+                </div>
+                <div class="navTab">
+                    <a href="contact.html">CONTACT</a>
+                </div>
+                <div id="search">
+                    <form>
+                        <input id="searchBox" type="text" placeholder="Search..." required>
+                        <input class="button" type="button" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="contact_wrapper">
+            <div id="paragraph">
+                <h1>Contact Us</h1>
+                <p>We are here to answer any questions you may have about our services. 
+                Reach out to us and we'll respond as soon as we can.</p>
+            </div>
+            <div id="contactForm">
+                <h2>Get in touch</h2>
+                <form action="mailto:jamesahassett@gmail.com" method="post">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" class="formText" name="fullName">
+                        
+                        <label for="email">Email Address</label>
+                        <input type="text" class="formText" name="fullName">
+                        
+                        <label for="message">Your Message</label>
+                        <textarea class="formText" id="message" name="message">
+                        </textarea>
+                        <input class="button" id="formButton" type="submit" value="Send">
+                </form>
+            </div>
+            <div id="info_wrapper">
+                <div id="hours">
+                    <h2>Opening hours</h2>
+                    <p>Monday - Friday: 9am - 5pm</p>
+                    <p>Saturday/Sunday: Closed</p>
+                    <div class="underline">
+                        <hr/>
+                    </div>    
+                </div>
+                <div id="address">
+                    <h2>Address</h2>
+                    <p>Via Firma, 28</p>
+                    <p>Catania, Italy</p>
+                    <div class="underline"> 
+                        <hr/>
+                    </div>
+                </div>
+                <div id="details">
+                    <h2>Details</h2>
+                    <p id="email">info@pavimentazioneindustrialelombardo.it</p>
+                    <p>+39 095 093 4312</p>
+                </div>               
+            </div>
+            <div id="contactMap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.1373860572487!2d15.084559523679607!3d37.52501965207137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fcd95c728d65%3A0xaebdd9de1a3af045!2sVia+Fimia%2C+28!5e0!3m2!1sen!2sie!4v1512760536997" 
+				width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>    
+        <div class="footer">
+            <div class="social">
+                <div class="socialTab">
+                    <a id="facebook" href="http://www.facebook.com">
+                        <img src="assets/icons/Facebook2.png" class="icon" alt="Facebook">
+                    </a>
+                </div>
+                <div class="socialTab">
+                    <a id="twitter" href="http://www.twitter.com">
+                        <img src="assets/icons/Twitter2.png" class="icon" alt="Twitter">
+                    </a>
+                </div>
+                <div class="socialTab">
+                    <a id="Instagram" href="http://www.instagram.com">
+                        <img src="assets/icons/Instagram2.png" class="icon" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="footerText">
+                <p><b>LOMBARDO INDUSTRIAL FLOORS </b>&trade;</p> 
+                <p class="subtext">&middot; CATANIA | VIA FIMIA, 28 &middot; info@pavimentazioneindustrialelombardo.it</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="app.js"></script>
+	</body>
+
+</html>
