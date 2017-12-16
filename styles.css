@@ -28,7 +28,7 @@ html, body {
 .landingSection{
 	height: 100%;
 	width: 100%;
-	background: url(assets/images/19297.jpg) no-repeat fixed bottom left;
+	background: url(assets/images/landing.jpg) no-repeat fixed bottom left;
 	background-size: cover;
 	display: flex;
 	z-index: -1;
@@ -186,6 +186,8 @@ html, body {
 	margin: 0;
 	font-weight: bold;
 	padding-bottom: 15%;
+	/* chrome adjustment */
+	-webkit-padding-after: 5%;
 }
 .mainContent_1 p{
 	margin: 0;
@@ -382,11 +384,35 @@ color: #455A64;
 	justify-self: center;
 	padding-right: 5%;
 }
+/* fade in section */
+#about_Section_2_fadein{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: minmax(400px, auto);
+	align-items: center;
+	grid-gap: 1em;
+	font-size: 1.5em;
+	overflow: auto;
+}
+/* divs in fadein section */
+.fadein {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #546E7A !important;
+	color: white;
+	border-radius: 5%;
+	opacity: 0.8;
+}
+.fadein p {
+	text-align: center;
+}
 /*second paragraf text content only*/
 #about_Section_3 {
 	min-height: 400px;
 	background-color: #f3eee6;
-	font-size: 2em;
+	font-size: 1.5em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -408,17 +434,17 @@ color: #455A64;
 /*transition cannot be under HOVER subselector! ease out wouldn't work on mouse off event*/
 .about_history {
 	/*transition with prefixes for different browsers*/
-	-webkit-transition: all ease-in-out 0.5s;
-  -moz-transition: all ease-in-out 0.5s;
-  -o-transition: all ease-in-out 0.5s;
-	transition: all ease-in-out 0.5s;
+	-webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
 }
 /*expand and center on hover event*/
 .about_history:hover {
-	background-color: #bcb7b6;
+	background-color: #546E7A;
 	border-radius: 10px;
 	padding: 1px;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -440,10 +466,21 @@ color: #455A64;
 
 /* VERY SMALL SCREEN */
 @media screen and (max-width: 900px){
+	
+	/* fadein element */
+	#about_Section_2_fadein{
+	grid-template-columns: 1fr;
+	grid-auto-rows:  minmax(250px, auto);
+	}
+	/* fadein divs */
+	.fadein {
+		border-radius: 0;
+	}
 	/* decrease font size */
 	.about_sec h1 {
 		line-height: 1em;
 	}
+
 	.about_sec p {
 		line-height: 1em;
 	}
@@ -454,7 +491,7 @@ color: #455A64;
 	/*lower main logo font size*/
 	#about_Section_1 {
 		padding-top: 20%;
-		font-size: 1.2em;
+		font-size: 2em;
 	}
 	/*split section 2 into 2 rows (from 2 columns)*/
 	#about_Section_2 {
