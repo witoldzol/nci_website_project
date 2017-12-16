@@ -19,6 +19,8 @@ html, body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
+	    font-family: 'Roboto', sans-serif;
+
 }
 
 /*--------------------------------------------	LANDING PAGE */
@@ -80,22 +82,33 @@ html, body {
 /*--------------------------------------------	NAV BAR */
 
 
+
+#navButton{
+    background: url(../assets/icons/menu2);
+    background-size: 50px 40px;
+    height: 40px;
+    width: 50px;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    border: none;
+}
 #nav{
-	z-index: 99999;
+	z-index: 99998;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    height: 60px;
-    background: rgba(55,71,79,.5);
+    height: 40px;
+    background: rgb(55,71,79);
     width: 100%;
-    min-width: 700px;
+    min-width: 100px;
     /*fixed position of navbar */
     position: fixed;
     top: 0;
 }
 .navTab{
-    margin: 4%;
+    margin: 3%;
 }
 .navTab a{
     text-decoration: none;
@@ -107,11 +120,17 @@ html, body {
 }
 #searchBox{
     padding:8px 15px;
-    background:rgba(50, 50, 50, 0.2);
+    background:rgba(144, 164, 174, 0.3);
     border:0px solid #DBDBDB;
     color: #ECEFF1;
 }
-#searchButton{
+
+#searchBox:focus{
+    outline: none;
+    background: rgba(144, 164, 174, 0.5);
+}
+.button{
+    margin: 0;
     position:relative;
     padding: 6px 15px;
     left: -8px;
@@ -120,9 +139,23 @@ html, body {
     color: #ECEFF1;
     border-radius: 0;
 }
-#searchButton:hover{
+
+.button:hover{
+    border-color: #ECEFF1;
     background-color: #ECEFF1;
     color: #263238;
+}
+.button:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 721px){
+    #searchBox{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
 }
 
 /*--------------------------------------------	MAIN SECTION */
@@ -172,15 +205,18 @@ html, body {
 
 /*background and font colors */
 #mainContent_1_div_1{
-background-color: #bcb7b6;
+background-color: #546E7A;
 }
 #mainContent_1_div_2{
 background-color: #f3eee6;
-color:#968e8d;
+color: #616161;
+
 }
 #mainContent_1_div_3{
-background-color: #d0ccc8;
-color:#968e8d;
+background-color: #CFD8DC;
+
+color: #455A64;
+
 }
 
 /* ----------------------------- spacer between 1 and 2 */
@@ -195,8 +231,9 @@ color:#968e8d;
 
 /*container for 3 rows */
 #mainSection_2 {
-	background-color: #f3eee6;
-	color: #968e8d;
+	background-color: #F3EEE6;
+
+	color: #616161;
 	display: grid;
 	/*layout*/
 	grid-template-areas:
@@ -322,8 +359,8 @@ color:#968e8d;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-auto-rows: minmax(500px, auto);
-	background-color: #bcb7b6;
-	color: #504a49;
+	background-color: #546E7A;
+	color: white;
 }
 #about_Section_2 div {
 	max-height: 400px;
@@ -340,7 +377,7 @@ color:#968e8d;
 /*first paragraf - text only*/
 #about_Section_2 p {
 	width: 20ch;
-	font-size: 2em;
+	font-size: 1.5em;
 	align-self: center;
 	justify-self: center;
 	padding-right: 5%;
@@ -353,15 +390,14 @@ color:#968e8d;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #504a49;
+	color: #616161;
 }
 /*history section*/
 #about_Section_4 {
-	font-size: 1em;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	background-color: #d0ccc8;
-	color: #504a49;
+	background-color: #CFD8DC;
+	color: #455A64;
 }
 .hidden {
 	opacity: 0;
@@ -707,7 +743,7 @@ img.hover-shadow {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(150px, auto);
-    background: #546E7A;
+    background: #CFD8DC;
     margin: 0 auto;
     grid-template-areas: 
         "p p"
@@ -720,7 +756,7 @@ img.hover-shadow {
 	padding-bottom: 15%;
     text-align: center;
     grid-area: p;
-    color: #CFD8DC;
+    color: #455A64;
 }
 #info_wrapper{
     grid-area: i;
