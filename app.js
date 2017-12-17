@@ -17,7 +17,7 @@ $(document).ready(function() {
             /* If the object is completely visible in the window, fade it it */
             if( window_end > object_end ){
 
-                $(this).animate({'opacity':'1'},1000);
+                $(this).animate({'opacity':'1'},500);
 
             }
 
@@ -44,6 +44,14 @@ $(document).ready(function() {
 
 
     
+});
+ 
+        //------------------------toggle navbar when nav button is clicked--------
+
+        let navBtn = document.getElementById('navButton');
+        let navBar = document.getElementById('nav');
+            $('#navButton').click(function(){
+	           $('#nav').slideToggle(200); 
 });
 
 
